@@ -20,28 +20,28 @@ docker-compose up --build`
 
 ______________
 
-## Manual Setup
+# Manual Setup
 
-# Backend
+## Backend
 cd backend
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
 
-# Frontend (new terminal)
+## Frontend (new terminal)
 cd frontend
 npm install
 npm start
 
-# Microservices (new terminal)
+## Microservices (new terminal)
 cd microservices/express-mongo
 npm install
 npm start
 
 ______________
 
-## URLs
+# URLs
 
 Django Backend: http://localhost:8000
 React Frontend: http://localhost:3000
