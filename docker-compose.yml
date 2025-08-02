@@ -1,0 +1,52 @@
+### 2. docker-compose.yml
+```yaml
+version: '3.8'
+
+services:
+  django:
+    build: ./backend
+    container_name: django-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=sqlite:///db.sqlite3
+    depends_on:
+      - mongodb
+
+  react:
+    build: ./frontend
+    container_name: react-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+
+  express-mongo:
+    build: ./microservices/express-mongo
+    container_name: express-mongo-service
+    ports:
+      - "3030:3030"
+    volumes:
+      - ./microservices/express-mongo:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/dealership
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
