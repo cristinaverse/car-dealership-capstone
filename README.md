@@ -18,6 +18,7 @@ A full-stack car dealership application with Django backend, React frontend, and
 bash
 `docker-compose up --build`
 
+__________
 
 # Manual Setup
 
@@ -38,7 +39,7 @@ cd microservices/express-mongo
 npm install
 npm start
 
-_
+__________
 
 # URLs
 
