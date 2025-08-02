@@ -18,51 +18,6 @@ A full-stack car dealership application with Django backend, React frontend, and
 bash
 `docker-compose up --build`
 
-car-dealership-capstone/
-├── README.md
-├── docker-compose.yml
-├── .gitignore
-├── backend/
-│   ├── requirements.txt
-│   ├── manage.py
-│   ├── Dockerfile
-│   ├── djangoproj/
-│   │   ├── __init__.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   └── wsgi.py
-│   └── djangoapp/
-│       ├── __init__.py
-│       ├── models.py
-│       ├── views.py
-│       ├── urls.py
-│       ├── admin.py
-│       ├── templates/
-│       └── static/
-├── frontend/
-│   ├── package.json
-│   ├── Dockerfile
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   ├── index.js
-│   │   ├── components/
-│   │   └── pages/
-│   └── public/
-│       └── index.html
-├── microservices/
-│   └── express-mongo/
-│       ├── package.json
-│       ├── server.js
-│       ├── Dockerfile
-│       ├── models/
-│       └── routes/
-├── .github/
-│   └── workflows/
-│       └── ci-cd.yml
-├── docs/
-└── screenshots/
-
 __________
 
 # Manual Setup
