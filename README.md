@@ -16,34 +16,34 @@ A full-stack car dealership application with Django backend, React frontend, and
 
 ### Using Docker (Recommended)
 ```bash`
-`docker-compose up --build`
+docker-compose up --build`
 
 ______________
 
 # Manual Setup
 
 ## Backend
-`cd backend
+cd backend
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver`
 
 ## Frontend (new terminal)
-`cd frontend
+cd frontend
 npm install
-npm start`
+npm start
 
 ## Microservices (new terminal)
-`cd microservices/express-mongo
+cd microservices/express-mongo
 npm install
-npm start`
+npm start
 
 ______________
 
 # URLs
 
-Django Backend: `http://localhost:8000`
-React Frontend: `http://localhost:3000`
-Express API: `http://localhost:3030`
-Django Admin: `http://localhost:8000/admin`
+Django Backend: http://localhost:8000
+React Frontend: http://localhost:3000
+Express API: http://localhost:3030
+Django Admin: http://localhost:8000/admin
