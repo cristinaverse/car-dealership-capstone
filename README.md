@@ -15,8 +15,8 @@ A full-stack car dealership application with Django backend, React frontend, and
 ## Quick Start
 
 ### Using Docker (Recommended)
-```bash`
-docker-compose up --build`
+bash
+`docker-compose up --build`
 
 ______________
 
